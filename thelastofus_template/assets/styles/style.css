@@ -1,0 +1,311 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+.container {
+    height: 100%;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.home {
+    height: 770px;
+    background-image: url("../images/backgroundHome.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+
+header > figure > img {
+    width: 254px;
+    height: 144px;
+}
+
+nav {
+    width: 50%;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul > li > a {
+    color: var(--color-grey-2);
+    font-family: Iceland;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+}
+
+ul > li > a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+main {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 92px;
+    font-weight: 400;
+    line-height: 89px;
+    text-align: left;
+    color: var(--color-grey-2);
+}
+
+main > p {
+    width: 506px;
+    font-family: 'Actor', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--text-color-1);
+}
+
+button {
+    height: 46px;
+    width: 180px;
+    margin: 5px;
+    font-family: "Iceland", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    cursor: pointer;
+    filter: drop-shadow(0px 2px 2px #000000);
+    -webkit-filter: drop-shadow(0px 2px 2px #000000);
+}
+
+
+.active {
+    background-color: var(--color-secondary);
+    color: var(--color-grey-2);
+}
+
+.active > span {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 35px 5px 35px;
+    border: 1.5px solid var(--color-grey-2);
+}
+
+.active:hover {
+    border: 1px solid var(--color-grey-2);
+}
+
+.inactive {
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-2);
+}
+
+.inactive > span {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 20px 5px 20px;
+    border: 1.5px solid #ffffff;
+}
+
+.inactive:hover {
+    border: 1px solid #ffffff;
+}
+
+main > section {
+    height: 200px;
+    margin-top: 100px;
+}
+
+h3 {
+    height: 32px;
+    width: 100%;
+    font-family: 'Iceland', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: left;
+    color: var(--color-grey-2);
+}
+
+section > ul {
+    width: 850px;
+    height: 140px;
+}
+
+section > ul > li {
+    height: 100%;
+    width: 260px;
+}
+
+.survival {
+    background-image: url("../images/inside/survival.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    filter: drop-shadow(0px 2px 2px #000000);
+    -webkit-filter: drop-shadow(0px 2px 2px #000000);
+}
+
+.relationship {
+    background-image: url("../images/inside/relationship.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    filter: drop-shadow(0px 2px 2px #000000);
+    -webkit-filter: drop-shadow(0px 2px 2px #000000);
+}
+
+.adventure {
+    background-image: url("../images/inside/adventure.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    filter: drop-shadow(0px 2px 2px #000000);
+    -webkit-filter: drop-shadow(0px 2px 2px #000000);
+}
+
+.li-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-grey-2);
+    cursor: pointer;
+}
+
+.li-main:hover {
+    text-decoration: underline;
+}
+
+.episodes {
+    height: 770px;
+    background-image: url("../images/backgroundEpisodes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+
+.post {
+    height: 546px;
+    width: 479px;
+    margin-top: 100px;
+    text-align: justify;
+}
+
+.post > p {
+    color: var(--color-grey-2);
+    font-family: Iceland;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 10px;
+}
+
+.post > p > span {
+    color: var(--color-secondary);
+}
+
+.episodes-list {
+    height: 546px;
+    width: 671px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.card {
+    height: 170px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    background-color: var(--color-grey-3);
+}
+
+.episodes-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.episodes-list::-webkit-scrollbar-track {
+    background-color: var(--text-color-1);
+    border-radius: 20px;
+  }
+
+.episodes-list::-webkit-scrollbar-thumb {
+    background-color: var(--color-secondary);
+    border-radius: 20px;
+}
+
+.episodes-list::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-grey-1);
+  }
+
+.card > img {
+    height: 120px;
+    width: 200px;
+    border-radius: 12px;
+}
+
+.card-text {
+    width: 60%;
+    height: 70%;
+    margin: 10px;
+}
+
+.card-text > h4 {
+    height: 30px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: justify;
+    color: var(--color-grey-2);
+}
+
+.card-text > p {
+    height: 88px;
+    width: 290px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify;
+    color: var(--color-grey-2);
+}
+
+footer {
+    height: 320px;
+    background: linear-gradient(180deg, #000000 0%, #950202 289.06%);
+}
+
+footer > figure > img {
+    height: 140px;
+    width: 140px;
+}
+
+.container > section > h2 {
+    font-family: 'Iceland', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--color-grey-2);
+    text-align: center;
+}
+
+.container > section > h3 {
+    font-family: 'Iceland', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
